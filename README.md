@@ -1,1 +1,44 @@
-# MapReduce
+# YouTube Data Analysis with MapReduce
+This project demonstrates a simulation of big data analytics using Apache Hadoop and tools in the Hadoop ecosystem.
+
+<details>
+  <summary>Table of Contents</summary>
+  
+  1. Data Source
+  2. Data Preprocessing
+     * With some
+     * Sub bullets
+</details>
+
+# Data Source
+Kaggle:
+* Trending YouTube Video Statistics ([Nov 2017 - Jun 2018](https://www.kaggle.com/datasnaek/youtube-new?select=CAvideos.csv))
+* YouTube Trending Video Dataset ([Aug 2020 - Present](https://www.kaggle.com/rsrishav/youtube-trending-video-dataset?select=BR_youtube_trending_data.csv))
+
+_Note: Cutoff date of data collection for this project is 14/06/2021, i.e. data used in this project is only up to 14/06/2021_
+
+# Data Preprocessing
+To simulate the application of big data analytics, the following steps are performed to combine the datasets and produce a relatively larger file:
+
+**File Level**
+1. Resolved 2017-2018 data encoding issue:
+    * Converted ANSI encoding to utf-8 using Notepad++ (for Japan, Korea, Mexico and Russia data)
+2. Deleted Brazil’s dataset from 2020-2021 data as 2017-2018 data does not contain
+dataset for Brazil. This is to maintain the consistency of the countries in both time
+periods.
+
+**Data Level**
+1. Dropped columns that exist in either one of the dataset but not both datasets.
+    * Column dropped for 2017-2018: “video_error_or_removed”
+    * Column dropped for 2020-2021: “channelID”
+2. Added the column “country” as an identifier for the country that the rows belong to.
+3. Standardized the “publishAt” and “publish_time” date format.
+4. Merged “category_id” with category extracted from JSON files containing category data. Null values occurred for rows with “category_id” 29. Upon further
+investigations, it was discovered that “category_id” 29 represented “Nonprofits & Activism” and thus this category was added during the merging process.
+5. Renamed column names and rearranged column positions to ensure both datasets are compatible to append/ concatenate.
+6. Combined all datasets and produced the final dataset with approximately 1.5GB of file size.
+
+**Download Preprocessed Datasets**
+```
+bash setup.sh
+```

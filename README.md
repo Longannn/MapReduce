@@ -10,6 +10,7 @@ This project demonstrates a simulation of big data analytics using Apache Hadoop
      * Sub bullets
 </details>
 
+
 # Data Source
 Kaggle:
 * Trending YouTube Video Statistics ([Nov 2017 - Jun 2018](https://www.kaggle.com/datasnaek/youtube-new?select=CAvideos.csv))
@@ -17,8 +18,14 @@ Kaggle:
 
 _Note: Cutoff date of data collection for this project is 14/06/2021, i.e. data used in this project is only up to 14/06/2021_
 
+
 # Data Preprocessing
 To simulate the application of big data analytics, the following steps are performed to combine the datasets and produce a relatively larger file:
+
+### Part 1
+```Data Preparation.ipynb``` prepares data for ```analysis_n_x.py``` <br>
+```n```: 1/ 2/ 3 <br>
+```y```: mrjob/ norm
 
 **File Level**
 1. Resolved 2017-2018 data encoding issue:
@@ -38,7 +45,15 @@ investigations, it was discovered that “category_id” 29 represented “Nonpr
 5. Renamed column names and rearranged column positions to ensure both datasets are compatible to append/ concatenate.
 6. Combined all datasets and produced the final dataset with approximately 1.5GB of file size.
 
-**Download Preprocessed Datasets**
+### Part 2
+```Data Preparation 2.ipynb``` prepares data for ```comparison_hive.hql```, ```comparison_mrjob.py```, and ```comparison_norm.py```
+
+1. Similar steps with Part 1.
+2. Removed columns “title”, “channelTitle”, “tags”, and “description” to reduce the complexity of importing data with inconsistent delimiters. 
+3. Upsampled the dataset by duplicating the data 10 times to retain a relatively larger data file size of approximately 1.5GB.
+
+### Download Preprocessed Datasets
+The preprocessed datasets are available for download by running:
 ```
 bash setup.sh
 ```

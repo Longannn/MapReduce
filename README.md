@@ -7,8 +7,9 @@ This project demonstrates a simulation of big data analytics using Apache Hadoop
   1. Setup
   2. Data Source
   3. Data Preprocessing
-     * With some
-     * Sub bullets
+     * Part 1
+     * Part 2
+     * Download Preprocessed Datasets
 </details>
 
 

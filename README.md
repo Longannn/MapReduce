@@ -23,6 +23,8 @@ Installations:
 * [Apache Hive 3.1.2](https://hive.apache.org/downloads.html)
 * [mrjob](https://mrjob.readthedocs.io/en/latest/)
 
+Guide to setup EC2 Hadoop Cluster on AWS: 
+* [Walkthrough - Setting up EC2 Hadoop Cluster on AWS](https://www.youtube.com/watch?v=9Oq3Vs9fy9c) by Prof. Lau Sian Lun :man_teacher:
 
 # Data Source
 Kaggle:

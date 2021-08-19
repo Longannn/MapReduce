@@ -19,10 +19,10 @@ This project demonstrates the application of big data analytics on YouTube trend
 # Introduction to Analysis
 Four analyses are performed to answer the following questions based on the YouTube trending video data:
 
-**Analysis 1**: What terms are commonly used in YouTube trending videos’ titles?
-**Analysis 2**: What are the top categories of YouTube trending videos?
-**Analysis 3**: Which YouTube channels frequently produce trending videos?
-**Analysis 4**: What are the top categories of YouTube trending videos in different countries?
+* **Analysis 1**: What terms are commonly used in YouTube trending videos’ titles?
+* **Analysis 2**: What are the top categories of YouTube trending videos?
+* **Analysis 3**: Which YouTube channels frequently produce trending videos?
+* **Analysis 4**: What are the top categories of YouTube trending videos in different countries?
 
 Dataset descriptions and source are available here (link to data source section)
 

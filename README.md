@@ -1,5 +1,5 @@
 # YouTube Data Analysis with MapReduce
-This project demonstrates a simulation of big data analytics using Apache Hadoop and tools in the Hadoop ecosystem.
+This project demonstrates the application of big data analytics on YouTube trending video data using Apache Hadoop and tools in the Hadoop ecosystem. This project also compares the performance of analyses between big data techniques and conventional techniques.
 
 <details>
   <summary>Table of Contents</summary>

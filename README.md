@@ -4,11 +4,23 @@ This project demonstrates a simulation of big data analytics using Apache Hadoop
 <details>
   <summary>Table of Contents</summary>
   
-  1. Data Source
-  2. Data Preprocessing
+  1. Setup
+  2. Data Source
+  3. Data Preprocessing
      * With some
      * Sub bullets
 </details>
+
+
+# Setup
+Compute:
+* 3 AWS EC2 intances (1 master node, 2 slave nodes) 
+* Instance type: t2 medium
+
+Installations:
+* [Apache Hadoop 3.2.2](https://hadoop.apache.org/release/3.2.2.html)
+* [Apache Hive 3.1.2](https://hive.apache.org/downloads.html)
+* [mrjob](https://mrjob.readthedocs.io/en/latest/)
 
 
 # Data Source

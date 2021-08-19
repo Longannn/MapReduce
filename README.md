@@ -53,8 +53,7 @@ periods.
     * Column dropped for 2020-2021: “channelID”
 2. Added the column “country” as an identifier for the country that the rows belong to.
 3. Standardized the “publishAt” and “publish_time” date format.
-4. Merged “category_id” with category extracted from JSON files containing category data. Null values occurred for rows with “category_id” 29. Upon further
-investigations, it was discovered that “category_id” 29 represented “Nonprofits & Activism” and thus this category was added during the merging process.
+4. Merged “category_id” with category extracted from JSON files containing category data. Null values occurred for rows with “category_id” 29, which represented “Nonprofits & Activism”. Thus this category was added during the merging process.
 5. Renamed column names and rearranged column positions to ensure both datasets are compatible to append/ concatenate.
 6. Combined all datasets and produced the final dataset with approximately 1.5GB of file size.
 

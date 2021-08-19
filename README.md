@@ -71,3 +71,11 @@ The preprocessed datasets are available for download by running:
 ```
 bash setup.sh
 ```
+
+# Contributors
+This is a group project completed in collaboration with: <br>
+<a href="https://github.com/Longannn/MapReduce/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Longannn/MapReduce" />
+</a>
+
+Made with [contributors-img](https://contrib.rocks).

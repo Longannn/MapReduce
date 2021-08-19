@@ -1,16 +1,32 @@
 # YouTube Data Analysis with MapReduce
-This project demonstrates the application of big data analytics on YouTube trending video data using Apache Hadoop and tools in the Hadoop ecosystem. This project also compares the performance of analyses between big data techniques and conventional techniques.
+This project demonstrates the application of big data analytics on YouTube trending video data using Apache Hadoop and tools in the Hadoop ecosystem.  Apart from obtaining insights for several analysis questions, the project sets out to evaluate the performance of analyses between the conventional method and different Big Data approaches such as MapReduce and Apache's Hive. This would provide an insight on which approach is suitable for what type of analytical requirements.
+
 
 <details>
   <summary>Table of Contents</summary>
-  
-  1. Setup
-  2. Data Source
-  3. Data Preprocessing
+  1. Introduction to Analysis
+  2. Setup
+  3. Data Source
+  4. Data Preprocessing
      * Part 1
      * Part 2
      * Download Preprocessed Datasets
+  5. Usage
+  6. Performance Evaluation
 </details>
+
+
+# Introduction to Analysis
+Four analyses are performed to answer the following questions based on the YouTube trending video data:
+
+**Analysis 1**: What terms are commonly used in YouTube trending videos’ titles?
+**Analysis 2**: What are the top categories of YouTube trending videos?
+**Analysis 3**: Which YouTube channels frequently produce trending videos?
+**Analysis 4**: What are the top categories of YouTube trending videos in different countries?
+
+Dataset descriptions and source are available here (link to data source section)
+
+**_Note_**: _Analysis 1 - 3 focuses on countries communicating mainly in English (Canada, US, UK) due to the limitation in processing and analyzing foreign languages_
 
 
 # Setup
@@ -132,6 +148,47 @@ $ hadoop fs -put ./data/*.csv data
     ```
     $ hive -f comparison_hive.hql
     ```
+
+# Performance Evaluation
+##### Analysis 1,2,3
+The following table shows the time taken to conduct Analysis 1, 2 and 3 using conventional and MapReduce approaches. Three attempts were made for each analysis for every method / approach. The average time taken is calculated.
+
+#### Analysis 1
+
+Attempt | Conventional | MapReduce | 
+------------ | ------------- | ------------ | 
+1 | '22m 33.567s' | '3m 20.400s' |
+2 | '22m 2.635s' | '3m 19.298s' |
+3 | '21m 56.755s' | '3m 15.358s' |
+**Average** | '22m 10.986s' | '3m 18.352s' |
+
+#### Analysis 2
+
+Attempt | Conventional | MapReduce |
+------------ | ------------- | ------------ | 
+1 | '0m 26.003s' | '3m 1.987s' |
+2 | '0m 25.249s' | '2m 52.843s' |
+3 | '0m 25.197s' | '2m 55.391s' |
+**Average** | '0m 25.483s' | '2m 56.740s' |
+
+#### Analysis 3
+
+Attempt | Conventional | MapReduce |
+------------ | ------------- | ------------ | 
+1 | '4m 32.977s' | '3m 38.313s' |
+2 | '4m 30.772s' | '3m 15.837s' |
+3 | '4m 31.424s' | '3m 24.148s' |
+**Average** | '4m 31.720s' | '3m 26.100s' |
+
+#### Analysis 4
+
+Attempt | Conventional | MapReduce | Hive |
+------------ | ------------- | ------------ | ------------ |
+1 | '0m 34.307s' | '2m 39.445s' | '1m 0.875s' |
+2 | '0m 33.893s' | '2m 31.260s' | '1m 3.830s' |
+3 | '0m 33.575s' | '2m 12.982s' | '1m 0.670s' |
+**Average** | '0m 33.930s' | '2m 27.900s' | '1m 1.790s' |
+
 
 
 # Contributors

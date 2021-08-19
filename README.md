@@ -26,6 +26,7 @@ Installations:
 Guide to setup EC2 Hadoop Cluster on AWS: 
 * [Walkthrough - Setting up EC2 Hadoop Cluster on AWS](https://www.youtube.com/watch?v=9Oq3Vs9fy9c) by Prof. Lau Sian Lun :man_teacher:
 
+
 # Data Source
 Kaggle:
 * Trending YouTube Video Statistics ([Nov 2017 - Jun 2018](https://www.kaggle.com/datasnaek/youtube-new?select=CAvideos.csv))
@@ -67,10 +68,71 @@ periods.
 3. Upsampled the dataset by duplicating the data 10 times to retain a relatively larger data file size of approximately 1.5GB.
 
 ### Download Preprocessed Datasets
-The preprocessed datasets are available for download by running:
+The preprocessed datasets are available for download (refer to guide under the Usage section).
+
+
+# Usage
+1. Start the Hadoop cluster
 ```
-bash setup.sh
+$ start_all.sh
 ```
+
+2. Download the repo
+```
+$ wget https://github.com/Longannn/MapReduce/archive/refs/heads/main.zip
+```
+
+3. Unzip the file
+```
+$ unzip main.zip
+```
+
+4. Change directory into the ```MapReduce-main``` folder
+```
+$ cd MapReduce-main
+```
+
+5. Download the preprocessed dataset
+```
+$ bash setup.sh
+```
+
+6. Upload the datasets into HDFS 
+```
+$ hadoop fs -mkdir data
+$ hadoop fs -put ./data/*.csv data
+```
+
+7. Run analysis with timing output in the  ```MapReduce-main``` folder
+    * Conventional python (codes with ```norm``` suffix)
+    ```
+    $ time python3 analysis_1_norm.py 
+    ```
+    * MapReduce using Hadoop cluster (codes with ```mrjob``` suffix)
+    ```
+    $ time python3 analysis_1_mrjob.py -r hadoop hdfs:///user/hadoop/data/combined_all.csv --output hdfs:///user/hadoop/a1output
+    ```
+
+8. Run analysis with Hive: ```comparison_hive.hql``` <br>
+   _**Note: Initial setup should only be run once for the first time**_
+    * Initial setup - remove conflicting jar files 
+    ```
+    $ rm /home/hadoop/hive-3.1.2/lib/log4j-slf4j-impl-2.10.0.jar
+    $ rm /home/hadoop/hive-3.1.2/lib/guava-19.0.jar
+    ```
+    * Initial setup - update guava library in Hive to be the same as Hadoop 
+    ```
+    $ cp /home/hadoop/hadoop-3.2.2/share/hadoop/common/lib/guava-27.0-jre.jar /home/hadoop/hive-3.1.2/lib/
+    ```
+    * Initial setup - initiate schema
+    ```
+    $ schematool -initSchema -dbType derby
+    ```
+    * Run HiveQL code
+    ```
+    $ hive -f comparison_hive.hql
+    ```
+
 
 # Contributors
 This is a group project completed in collaboration with: <br>

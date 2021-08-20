@@ -151,44 +151,43 @@ $ hadoop fs -put ./data/*.csv data
 
 
 # Performance Evaluation
+The following tables shows the time taken to execute Analysis 1, 2, 3 using conventional method and MapReduce and the time taken to execute Analysis 4 using conventional method, MapReduce and MapReduce with Hive. Three attempts are made for each analysis and the average time taken is calculated.
 
-The following tables shows the time taken to conduct Analysis 1, 2, 3 using conventional and MapReduce approaches and the time taken to conduct Analysis 4 using conventional, MapReduce and Hive approaches. Three attempts were made for each analysis for every method / approach. The average time taken is calculated.
+### Analysis 1
 
-#### Analysis 1
+Attempt      | Conventional  | MapReduce  | 
+------------ | ------------- | ---------- | 
+1            | 22m 33.567s   | 3m 20.400s |
+2            | 22m 2.635s    | 3m 19.298s |
+3            | 21m 56.755s   | 3m 15.358s |
+**Average**  | 22m 10.986s   | 3m 18.352s |
 
-Attempt | Conventional | MapReduce | 
------------- | ------------- | ------------ | 
-1 | 22m 33.567s | 3m 20.400s |
-2 | 22m 2.635s | 3m 19.298s |
-3 | 21m 56.755s | 3m 15.358s |
-**Average** | 22m 10.986s | 3m 18.352s |
+### Analysis 2
 
-#### Analysis 2
+Attempt      | Conventional  | MapReduce  |
+------------ | ------------- | ---------- | 
+1            | 0m 26.003s    | 3m 1.987s  |
+2            | 0m 25.249s    | 2m 52.843s |
+3            | 0m 25.197s    | 2m 55.391s |
+**Average**  | 0m 25.483s    | 2m 56.740s |
 
-Attempt | Conventional | MapReduce |
------------- | ------------- | ------------ | 
-1 | 0m 26.003s | 3m 1.987s |
-2 | 0m 25.249s | 2m 52.843s |
-3 | 0m 25.197s | 2m 55.391s |
-**Average** | 0m 25.483s | 2m 56.740s |
+### Analysis 3
 
-#### Analysis 3
+Attempt      | Conventional  | MapReduce  |
+------------ | ------------- | ---------- | 
+1            | 4m 32.977s    | 3m 38.313s |
+2            | 4m 30.772s    | 3m 15.837s |
+3            | 4m 31.424s    | 3m 24.148s |
+**Average**  | 4m 31.720s    | 3m 26.100s |
 
-Attempt | Conventional | MapReduce |
------------- | ------------- | ------------ | 
-1 | 4m 32.977s | 3m 38.313s |
-2 | 4m 30.772s | 3m 15.837s |
-3 | 4m 31.424s | 3m 24.148s |
-**Average** | 4m 31.720s | 3m 26.100s |
+### Analysis 4
 
-#### Analysis 4
-
-Attempt | Conventional | MapReduce | Hive |
------------- | ------------- | ------------ | ------------ |
-1 | 0m 34.307s | 2m 39.445s | 1m 0.875s |
-2 | 0m 33.893s | 2m 31.260s | 1m 3.830s |
-3 | 0m 33.575s | 2m 12.982s | 1m 0.670s |
-**Average** | 0m 33.930s | 2m 27.900s | 1m 1.790s |
+Attempt      | Conventional  | MapReduce    |    Hive    |
+------------ | ------------- | ------------ | ---------- |
+1            | 0m 34.307s    | 2m 39.445s   | 1m 0.875s  |
+2            | 0m 33.893s    | 2m 31.260s   | 1m 3.830s  |
+3            | 0m 33.575s    | 2m 12.982s   | 1m 0.670s  |
+**Average**  | 0m 33.930s    | 2m 27.900s   | 1m 1.790s  |
 
 
 

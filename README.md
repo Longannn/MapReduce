@@ -1,5 +1,5 @@
 # YouTube Data Analysis with MapReduce
-This project demonstrates the application of big data analytics on YouTube trending video data using Apache Hadoop and tools in the Hadoop ecosystem.  Apart from obtaining insights for several analysis questions, the project sets out to evaluate the performance of analyses between the conventional method and different Big Data approaches such as MapReduce and Apache's Hive. This would provide an insight on which approach is suitable for what type of analytical requirements.
+This project demonstrates the application of big data analytics on YouTube trending video data using Apache Hadoop and tools in the Hadoop ecosystem. Apart from obtaining insights for several analysis questions, this project also sets out to evaluate the performance of analyses between the conventional method and big data approach (MapReduce) to explore their suitability under different analytical requirements.
 
 
 <details>
@@ -148,6 +148,7 @@ $ hadoop fs -put ./data/*.csv data
     ```
     $ hive -f comparison_hive.hql
     ```
+
 
 # Performance Evaluation
 

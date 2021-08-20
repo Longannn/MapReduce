@@ -25,7 +25,7 @@ Four analyses are performed to answer the following questions based on the YouTu
 * **Analysis 3**: Which YouTube channels frequently produce trending videos?
 * **Analysis 4**: What are the top categories of YouTube trending videos in different countries?
 
-Dataset descriptions and source are available here (link to data source section)
+Dataset descriptions and data source are available [here](#data-source).
 
 **_Note_**: _Analysis 1 - 3 focuses on countries communicating mainly in English (Canada, US, UK) due to the limitation in processing and analyzing foreign languages_
 

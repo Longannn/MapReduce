@@ -58,7 +58,7 @@ To simulate the application of big data analytics, the following steps are perfo
 ### Part 1
 ```Data Preparation.ipynb``` prepares data for ```analysis_n_x.py``` <br>
 ```n```: 1/ 2/ 3 <br>
-```y```: mrjob/ norm
+```x```: mrjob/ norm
 
 **File Level**
 1. Resolved 2017-2018 data encoding issue:
@@ -78,7 +78,8 @@ periods.
 6. Combined all datasets and produced the final dataset with approximately 1.5GB of file size.
 
 ### Part 2
-```Data Preparation 2.ipynb``` prepares data for ```comparison_hive.hql```, ```comparison_mrjob.py```, and ```comparison_norm.py```
+```Data Preparation 2.ipynb``` prepares data for ```analysis_4_x.py``` <br>
+```x:```: hive/ mrjob/ norm
 
 1. Similar steps with Part 1.
 2. Removed columns “title”, “channelTitle”, “tags”, and “description” to reduce the complexity of importing data with inconsistent delimiters. 

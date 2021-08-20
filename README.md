@@ -152,7 +152,7 @@ $ hadoop fs -put ./data/*.csv data
 
 
 # Performance Evaluation
-The following tables shows the time taken to execute Analysis 1, 2, 3 using conventional method and MapReduce and the time taken to execute Analysis 4 using conventional method, MapReduce and MapReduce with Hive. Three attempts are made for each analysis and the average time taken is calculated.
+The following tables show the time taken to execute Analysis 1, 2, 3 using conventional method and MapReduce and the time taken to execute Analysis 4 using conventional method, MapReduce and MapReduce with Hive. Three attempts are made for each analysis and the average time taken is calculated.
 
 ### Analysis 1
 

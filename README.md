@@ -14,6 +14,8 @@ This project demonstrates the application of big data analytics on YouTube trend
      * [Download Preprocessed Datasets](#download-preprocessed-datasets)
   5. [Usage](#usage)
   6. [Performance Evaluation](#performance-evaluation)
+  7. [Contributors](#contributors)
+  8. [License](#license)
 </details>
 
 
@@ -200,3 +202,7 @@ This is a group project completed in collaboration with: <br>
 </a>
 
 Made with [contributors-img](https://contrib.rocks).
+
+
+# License
+Distributed under the MIT License. See ```LICENSE``` for more information.

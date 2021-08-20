@@ -4,15 +4,16 @@ This project demonstrates the application of big data analytics on YouTube trend
 
 <details>
   <summary>Table of Contents</summary>
-  1. Introduction to Analysis
-  2. Setup
-  3. Data Source
-  4. Data Preprocessing
-     * Part 1
-     * Part 2
-     * Download Preprocessed Datasets
-  5. Usage
-  6. Performance Evaluation
+  
+  1. [Introduction to Analysis](#introduction-to-analysis)
+  2. [Setup](#setup)
+  3. [Data Source](#data-source)
+  4. [Data Preprocessing](#data-preprocessing)
+     * [Part 1](#part-1)
+     * [Part 2](#part-2)
+     * [Download Preprocessed Datasets](#download-preprocessed-datasets)
+  5. [Usage](#usage)
+  6. [Performance Evaluation](#performance-evaluation)
 </details>
 
 

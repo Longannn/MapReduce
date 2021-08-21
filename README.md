@@ -14,8 +14,9 @@ This project demonstrates the application of big data analytics on YouTube trend
      * [Download Preprocessed Datasets](#download-preprocessed-datasets)
   5. [Usage](#usage)
   6. [Performance Evaluation](#performance-evaluation)
-  7. [Contributors](#contributors)
-  8. [License](#license)
+  7. Results Interpretations (Visualizations)
+  8. [Contributors](#contributors)
+  9. [License](#license)
 </details>
 
 
@@ -192,6 +193,16 @@ Attempt      | Conventional  | MapReduce    |    Hive    |
 2            | 0m 33.893s    | 2m 31.260s   | 1m 3.830s  |
 3            | 0m 33.575s    | 2m 12.982s   | 1m 0.670s  |
 **Average**  | 0m 33.930s    | 2m 27.900s   | 1m 1.790s  |
+
+
+# Results Interpretations 
+The results of analyses conducted to answer four questions stated [here](# Introduction to Analysis) are visualized using various charts and graphs for easy and effective interpretation. The data for all four analyses covers the range from November 2017 to June 2018 and August 2020 to June 2021. 
+
+**Note** : Analysis 1 to 3 represents the aggregated data for countries that mostly communicate in English, which are **Canada**, **US** and **UK**.
+
+* **Analysis 1**
+
+![Word Cloud for Popular Terms used in Trending YouTube Videos](MapReduce/Charts for result visualization/Analysis 1.png)
 
 
 

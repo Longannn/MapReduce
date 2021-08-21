@@ -202,7 +202,7 @@ The results of analyses conducted to answer four questions stated [here](# Intro
 
 * **Analysis 1**
 
-![Word Cloud for Popular Terms used in Trending YouTube Videos](/MapReduce/Charts for result visualization/Analysis 1.png)
+![Word Cloud for Popular Terms used in Trending YouTube Videos](Longannn/MapReduce/Charts for result visualization/Analysis 1.png)
 
 
 

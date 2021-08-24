@@ -201,6 +201,7 @@ The results of analyses conducted to answer to four questions [here](#introducti
 ***Note**: Analysis 1 to 3 represents the aggregated data for countries that mostly communicate in English, which are **Canada**, **US** and **UK***
 
 ### Analysis 1
+What terms are commonly used in YouTube trending videos’ titles?
 
 <p align="center">
   <img src="output/visualization/a1plot.png" height="500">
@@ -209,6 +210,7 @@ The results of analyses conducted to answer to four questions [here](#introducti
 Observing the word cloud above, the words “highlights” and “episode” were noted to be the top 2 words commonly found among titles of trending YouTube videos. This possibly indicates that videos with contents like game highlights or show highlights were found to be commonly trending and also the trending videos are mostly related to episodes of different series. Words such as “trailer”, “official”, “music” and “new” also appeared frequently, hinting that videos released officially, trailers or music videos tend to attract viewers.
 
 ### Analysis 2
+What are the top categories of YouTube trending videos?
 
 <p align="center">
   <img src="output/visualization/a2plot.png" height="500">
@@ -217,6 +219,7 @@ Observing the word cloud above, the words “highlights” and “episode” wer
 Observing the bar chart above, the entertainment category has the most videos with 73224 vidoes. In general, this shows that entertainment videos are significantly more likely to be trending in Canada, US and UK. As for the case of music category, many artists tend to release their official music video through YouTube on the launch of their new album or single as well as many other cover songs are also uploaded to YouTube. These videos also exhibited huge popularity amongst viewers that the music category has the second highest count with 54177 videos.
 
 ### Analysis 3
+Which YouTube channels frequently produce trending videos?
 
 <p align="center">
   <img src="output/visualization/a3plot_1.png" height="500">
@@ -231,7 +234,8 @@ Based on the bar chart above, it can be noted that several **sports** related ch
 While there were channels producing large amounts of trending videos as illustrated in the bar chart above, most YouTube channels (around 5848 channels) have produced only one trending video. The number of YouTube channels producing more than one trending video drops drastically, indicating the difficulty for YouTube channels to consistently produce videos that appeal to large audience crowds to become trending.
 
 ### Analysis 4
-
+What are the top categories of YouTube trending videos in different countries?
+ 
 <p align="center">
   <img src="output/visualization/a4plot.png" height="1000">
 </p>

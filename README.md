@@ -30,7 +30,7 @@ Four analyses are performed to answer the following questions based on the YouTu
 
 Dataset descriptions and data source are available [here](#data-source).
 
-**_Note_**: _Analysis 1 - 3 focuses on countries communicating mainly in English (Canada, US, UK) due to the limitation in processing and analyzing foreign languages_
+***Note**: Analysis 1 - 3 focuses on countries communicating mainly in English (Canada, US, UK) due to the limitation in processing and analyzing foreign languages*
 
 
 # Setup
@@ -52,7 +52,7 @@ Kaggle:
 * Trending YouTube Video Statistics ([Nov 2017 - Jun 2018](https://www.kaggle.com/datasnaek/youtube-new?select=CAvideos.csv))
 * YouTube Trending Video Dataset ([Aug 2020 - Present](https://www.kaggle.com/rsrishav/youtube-trending-video-dataset?select=BR_youtube_trending_data.csv))
 
-_Note: Cutoff date of data collection for this project is 14/06/2021, i.e. data used in this project is only up to 14/06/2021_
+***Note**: Cutoff date of data collection for this project is 14/06/2021, i.e. data used in this project is only up to 14/06/2021*
 
 
 # Data Preprocessing
@@ -198,9 +198,9 @@ Attempt      | Conventional  | MapReduce    |    Hive    |
 # Results Interpretations 
 The results of analyses conducted to answer to four questions [here](#introduction-to-analysis) are visualized using various charts and graphs for easy and effective interpretation. The data for all four analyses covers the range from November 2017 to June 2018 and August 2020 to June 2021. 
 
-**Note** : Analysis 1 to 3 represents the aggregated data for countries that mostly communicate in English, which are **Canada**, **US** and **UK**.
+***Note**: Analysis 1 to 3 represents the aggregated data for countries that mostly communicate in English, which are **Canada**, **US** and **UK***
 
-* **Analysis 1**
+### Analysis 1
 
 <img src="output/visualization/a1plot.png" height="500">
 

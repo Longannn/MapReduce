@@ -194,6 +194,13 @@ Attempt      | Conventional  | MapReduce    |    Hive    |
 3            | 0m 33.575s    | 2m 12.982s   | 1m 0.670s  |
 **Average**  | 0m 33.930s    | 2m 27.900s   | 1m 1.790s  |
 
+For analysis 2, the conventional method completed faster than MapReduce. This may be due to the relatively simple task in counting the categories that the conventional method handled well even with a large data file. 
+
+However, for Analysis 1 and 3 which were more complex, the advantage of parallel processing using MapReduce can be clearly noticed.
+
+For analysis 4, the conventional method took the shortest time, while MapReduce took the longest time to complete the analysis. Hive was expected to consume a longer time compared to MapReduce due to the latency caused by translating HiveQL to MapReduce jobs. However, Hive performed better than MapReduce in this analysis. 
+
+Although this analysis 2 and 4 did not demonstrate the expected output, it presented the case that performing a simple analysis on a dataset of 1.5GB, the conventional method may still operate well and Hive may still perform better than MapReduce. Further testing with more complex analyses may be conducted in the future to observe the effect of the possible latency with Hive to generate MapReduce jobs.
 
 # Results Interpretations 
 The results of analyses conducted to answer to four questions [here](#introduction-to-analysis) are visualized using various charts and graphs for easy and effective interpretation. The data for all four analyses covers the range from November 2017 to June 2018 and August 2020 to June 2021. 
